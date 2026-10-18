@@ -125,7 +125,7 @@
 </div>
 <main>
 <h1>Privacy Policy</h1>
-<p><strong>Last updated: April 30, 2026</strong></p>
+<p><strong>Last updated: October 18, 2026</strong></p>
 <blockquote>
 <p><strong>Note on this document.</strong> This Privacy Policy is provided by Holy Toast LLC for informational purposes and to satisfy app-store and SMS-compliance disclosure requirements. It is not legal advice, and reading it does not create an attorney-client relationship. It was drafted with the assistance of AI tooling and reviewed by Holy Toast LLC personnel, but has not been reviewed by a licensed Florida attorney as of the &quot;Last updated&quot; date above. If you are relying on any specific clause for a legal decision, please consult your own counsel.</p>
 </blockquote>
@@ -139,6 +139,7 @@
 <li><strong>Email + password</strong> — the password is stored as a one-way bcrypt hash; we never see your plaintext password.</li>
 <li><strong>Phone number</strong> — we send your number to Twilio Inc. to deliver a one-time SMS verification code (passwordless login). We do not store the code on our servers; Twilio holds it for the 10-minute verification window.</li>
 <li><strong>Sign in with Apple</strong> — we receive the Apple-issued user identifier and, if you choose to share them, your name and a private-relay email. We never see your Apple ID password.</li>
+<li><strong>Sign in with Google</strong> (Android app) — we receive the Google-issued user identifier and, if your Google account shares them, your name and email. We never see your Google password.</li>
 </ul>
 </li>
 <li><strong>Order details.</strong> Items you order, modifiers and special instructions you enter, the store you ordered from, your tip amount.</li>
@@ -149,13 +150,13 @@
 </ul>
 <h3>Information we collect automatically</h3>
 <ul>
-<li><strong>Device information.</strong> iOS version, device model, app version. Used to debug crashes and improve the experience.</li>
+<li><strong>Device information.</strong> iOS or Android version, device model, app version. Used to debug crashes and improve the experience.</li>
 <li><strong>App usage analytics.</strong> Which screens you visit, which features you use, in aggregate. We do not track you across other apps or websites.</li>
 <li><strong>Order activity timestamps</strong> for fraud prevention (e.g. detecting unusual ordering patterns).</li>
 </ul>
 <h3>Information we do NOT collect</h3>
 <ul>
-<li><strong>Location data</strong> beyond the store you select to order from. We do not track your physical location.</li>
+<li><strong>Location history.</strong> If you allow it, the App uses your approximate location once, on your device, when you open it, to pick the Holy Toast nearest you. That location is not sent to or stored on our servers, and we do not track your physical location.</li>
 <li><strong>Contacts.</strong> We do not access your phone&#39;s contact list.</li>
 <li><strong>Microphone or camera</strong> except when you explicitly choose to take a photo for the community feed.</li>
 <li><strong>Browsing or activity outside the App.</strong></li>
@@ -208,8 +209,13 @@
 </tr>
 <tr>
 <td><strong>Apple, Inc.</strong></td>
-<td>Crash reports (if you&#39;ve opted in via iOS Settings → Privacy); Sign in with Apple identifier (if you used that method)</td>
-<td>Diagnose app crashes; enable Sign in with Apple</td>
+<td>Crash reports (if you&#39;ve opted in via iOS Settings → Privacy); Sign in with Apple identifier (if you used that method); a device token and the text of notifications we send you (iPhone)</td>
+<td>Diagnose app crashes; enable Sign in with Apple; deliver push notifications</td>
+</tr>
+<tr>
+<td><strong>Google LLC</strong></td>
+<td>Sign in with Google identifier (if you used that method); a device token and the text of notifications we send you (Android, via Firebase Cloud Messaging)</td>
+<td>Enable Sign in with Google; deliver push notifications</td>
 </tr>
 <tr>
 <td><strong>Our hosting provider</strong></td>
